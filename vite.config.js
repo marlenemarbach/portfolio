@@ -6,8 +6,8 @@ export default defineConfig({
     rollupOptions: {
       input: {
         main: "index.html",
-        stitchmate: "stitchmate.html",
-        themetoggle: "themetoggle.html",
+        stitchmate: "projects/stitchmate.html",
+        portfolio: "projects/portfolio.html",
       },
     },
   },

@@ -1,0 +1,46 @@
+import "../style.css";
+import portfolioImg from "../../assets/portfolio_project.jpg";
+
+document.querySelector("#app").innerHTML = `
+<main>
+  <div class="content">
+    <a href="/" class="button" aria-label="Back to home">
+      <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
+        <path stroke-linecap="round" stroke-linejoin="round" d="M9 15 3 9m0 0 6-6M3 9h12a6 6 0 0 1 0 12h-3" />
+      </svg>
+    </a>
+
+    <div class="project-header">
+      <div>
+        <h1 class="text-lg">Portfolio</h1>
+        <p>2025</p>
+      </div>
+      <a href="https://github.com/marlenemarbach/portfolio" class="button button-small" aria-label="Source Code">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" />
+        </svg>
+      </a>
+    </div>
+    <img src="${portfolioImg}" class="project-img" alt="Portfolio website shown in dark and light mode side by side"/>
+    <div class="tools">
+      <h3>Tools</h3>
+      <p>HTML5, CSS3, Javascript, Vite</p>
+    </div>
+    <div class="divider"></div>
+<p>I needed a portfolio to showcase my projects. It should be content-first, fast, and intentional. Unburdened by heavy animations and unnecessary complexity. Every element serves a clear purpose.</p>
+
+  <p>I challenged myself to build without a framework. Just Vite for dev tooling, vanilla JavaScript for interactions, and CSS for styling. No component library, no UI framework, no unnecessary abstractions.</p>
+
+  <p>A single-column layout focuses the attention on content and works across screen sizes. Minimal JavaScript helps keep the load times. The fact the it's just static HTML means that we I leverage CDNs to host it for free.</p>
+
+  <p>Coming from large JavaScript frameworks in my day-to-day, it felt unfamiliar not to need to think in components at first. But it quickly reminded me why I love development: you don't always need complexity to solve a problem. Sometimes, the best solution is knowing what to leave out.</p>
+
+  <p>The result is fast, accessible, and maintainable. If it needs more functionality later, I can add it then. For now, it does exactly what is needed—nothing more, nothing less.</p>  </div>
+</main>
+<footer>
+  <p>${new Date().getFullYear()}</p>
+  <a href="/" aria-label="Back to home">
+    <img src="/mcodesit.svg" class="logo" />
+  </a>
+</footer>
+`;
